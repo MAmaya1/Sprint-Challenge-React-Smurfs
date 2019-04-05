@@ -2,10 +2,22 @@ import React, { Component } from 'react';
 
 import Smurf from './Smurf';
 
+import styled from 'styled-components';
+
+// Styled Components
+
+const StyledSmurfs = styled.div`
+  background: rgba(136, 204, 255, 0.7);
+  height: auto;
+  padding: 40px 0;
+`
+
+// Smurfs Component
+
 class Smurfs extends Component {
   render() {
     return (
-      <div className="Smurfs">
+      <StyledSmurfs>
         <h1>Smurf Village</h1>
         <ul>
           {this.props.smurfs.map(smurf => {
@@ -20,7 +32,7 @@ class Smurfs extends Component {
             );
           })}
         </ul>
-      </div>
+      </StyledSmurfs>
     );
   }
 }

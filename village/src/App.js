@@ -2,9 +2,38 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import {Route, NavLink} from 'react-router-dom';
 
-import './App.css';
 import SmurfForm from './components/SmurfForm';
 import Smurfs from './components/Smurfs';
+
+import styled from 'styled-components';
+
+// Styled Components
+
+const StyledApp = styled.div`
+  text-align: center;
+`
+
+const NavBar = styled.nav`
+  display: flex;
+  justify-content: space-evenly;
+  background: #5D9530;
+  height: 50px;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all 200ms ease;
+    }
+  }
+`
+
+// App Component
 
 class App extends Component {
   constructor(props) {
@@ -37,14 +66,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="nav-bar">
+      <StyledApp>
+        <NavBar>
           <NavLink to="/">Smurf Village</NavLink>
           <NavLink to="/smurf-form">Add New Smurf</NavLink>
-        </div>
+        </NavBar>
         <Route path="/smurf-form" render={() => <SmurfForm addSmurf={this.addSmurf}/>}/> 
         <Route exact path="/" render={() => <Smurfs smurfs={this.state.smurfs} />}/>
-      </div>
+      </StyledApp>
     );
   }
 }

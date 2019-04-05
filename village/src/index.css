@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+/* Global Styles */
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+  letter-spacing: 1px;
+  background: url('./img/smurfs-bg.jpg') no-repeat;
+}
+
+h1 {
+  margin: 0;
 }
