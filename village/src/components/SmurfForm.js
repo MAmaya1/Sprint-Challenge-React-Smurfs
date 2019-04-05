@@ -5,7 +5,7 @@ import styled from 'styled-components';
 // Styled Components
 
 const StyledForm = styled.div`
-  background: rgba(136, 204, 255, 0.7);
+  background: rgba(136, 204, 255, 0.9);
   height: calc(100vh - 50px);
   padding: 50px 0;
 

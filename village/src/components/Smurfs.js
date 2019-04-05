@@ -7,7 +7,7 @@ import styled from 'styled-components';
 // Styled Components
 
 const StyledSmurfs = styled.div`
-  background: rgba(136, 204, 255, 0.7);
+  background: rgba(136, 204, 255, 0.9);
   height: auto;
   padding: 40px 0;
 `
