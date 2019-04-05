@@ -10,6 +10,7 @@ body {
   font-family: 'Indie Flower', cursive;
   letter-spacing: 1px;
   background: url('./img/smurfs-bg.jpg') no-repeat;
+  background-size: cover;
 }
 
 h1 {
